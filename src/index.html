@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 1</title>
+  </head>
+  <body class="preparing">
+    <div id="foreground">
+      <h1 id="title">Noise My Mood</h1>
+      <!--subtitle randomized in main.ts-->
+      <h2 id="subtitle"></h2>
+      <h1 id="result-text">Take in the vibes...</h1>
+      <div id="form">
+        <!--Long form to build the request-->
+        <label for="color">How ya feelin'?</label>
+        <select id="color" name="color">
+          <option value="">Dunno</option>
+          <option value="d6d6d6">Stately</option>
+          <option value="733b00">Subdued</option>
+          <option value="ff0000">Fiery</option>
+          <option value="ff00e6">Uplifting</option>
+          <option value="ff6200">Stunning</option>
+          <option value="ffdd00">Energetic</option>
+          <option value="00ff00">Brilliant</option>
+          <option value="008700">Refreshed</option>
+          <option value="004200">Deep</option>
+          <option value="6bffa6">Gentle</option>
+          <option value="0059ff">Clear</option>
+          <option value="00e5ff">Cool</option>
+          <option value="000080">Smart</option>
+          <option value="b700ff">Mystic</option>
+          <option value="e100ff">Elegant</option>
+          <option value="ff0059">Vivid</option>
+        </select>
+        <br>
+        <div id="sliders">
+          <label for="tilenum">How vast are ya?</label>
+          <input type="range" id="tilenum" name="tilenum" min="5" max="50" value="50">
+          <br>
+          <label for="tilesize">and how big?</label>
+          <input type="range" id="tilesize" name="tilesize" min="1" max="20" value="7">
+          <br>
+          <label for="borderwidth">and how spacey?</label>
+          <input type="range" id="borderwidth" name="borderwidth" min="0" max="15" value="0">
+        </div>
+        <br>
+        <h3>Okay, last few questions:</h3>
+        <br>
+        <div id="brightness">
+          <label for="brightmult">How bright?</label>
+          <select id="brightmult" name="brightmult">
+            <option value="0.1">I am The Void</option>
+            <option value="0.5">A bit dim</option>
+            <option value="1.5" selected="true">Incandescent Lightbulb</option>
+            <option value="5">Floodlight</option>
+            <option value="100">I AM THE SUN</option>
+          </select>
+          <br>
+          <label for="brightsteps">and finally, how CRAZY?</label>
+          <input type="range" id="brightsteps" name="brightsteps" min="1" max="50" value="5">
+        </div>
+      </div>
+  
+      <br>
+  
+      <button id="submit">NOISE ME UP</button>
+      <button id="reset">Nah, lemme try again</button>
+
+      <br><br><br><br>
+      
+      <div id="credits">
+        <sub>Created by Dean "Leftie" Flint (c)2024</sub>
+        <br>
+        <sub>Powered by <a href="https://php-noise.com/" target="_blank">PHP-Noise</a></sub>
+      </div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

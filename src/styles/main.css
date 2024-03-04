@@ -1,0 +1,97 @@
+body {
+    background-image: url('background.png');
+    background-size: cover;
+}
+
+.preparing #reset, .preparing #result-text, .displaying #form, .displaying #submit {
+    display:none;
+}
+
+.displaying #reset {
+    display:block;
+}
+
+#foreground {
+    border: 10px ridge white;
+    background-color: rgba(0,0,0,0.75);
+    padding: 15px;
+    color: white;
+    position:absolute;
+    margin:auto;
+    bottom:0;
+    left: 25%;
+    width:50%;
+    height:33%;
+    overflow-y: scroll;
+    border-radius: 1%;
+}
+
+h1 {
+    font-size:xx-large;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: large;
+}
+
+select {
+    border: 1px solid white;
+    border-radius: 10%;
+    background-color: rgb(48, 48, 48);
+    
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/White_dot.svg/1200px-White_dot.svg.png);
+
+    background-size: 10px;
+    background-repeat: no-repeat;
+  
+    background-position-x: 98%;
+  
+    background-position-y: 2px;
+}
+
+option {
+    background-color: rgb(48, 48, 48);
+}
+
+button {
+    position:absolute;
+    margin:auto;
+    left: 40%;
+    min-width: auto;
+    max-width: 20%;
+}
+
+#credits {
+    position: relative;
+    float:right;
+    justify-items: right;
+}
+
+sub {
+    font-size: x-small;
+    color:gray;
+    text-align: right;
+}
+
+a:link {
+    text-decoration: underline;
+    color: gray;
+}
+a:visited, a:active {
+    text-decoration: underline;
+    color: lightslategray;
+}
+a:hover {
+    text-decoration: underline;
+    color: white;
+}
